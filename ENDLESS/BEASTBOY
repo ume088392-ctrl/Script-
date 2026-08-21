@@ -1,0 +1,306 @@
+-- ============================================================================
+--          ZAYN SPAM V7 (EXACT EXECUTE SINGLE LINE)
+-- ============================================================================
+
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local LocalPlayer = Players.LocalPlayer
+
+local function SayMessage(msg)
+    local TextChatService = game:GetService("TextChatService")
+    if TextChatService and TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
+        if TextChatService:FindFirstChild("ChatInputBarConfiguration") then
+            local channel = TextChatService.ChatInputBarConfiguration.TargetTextChannel
+            if channel then
+                channel:SendAsync(msg)
+            end
+        end
+    end
+end
+
+task.spawn(function()
+    print("=======================================")
+    print("DFFN BY ZAYN NEW SPAM☠️")
+    print("=======================================")
+    task.wait(1.0)
+
+    pcall(function()
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "BEASTBOY × ZAYN SPAM",
+            Text = "BEASTBOY [SPAM]🤣ENDLESS OF FATHER LOADED..!!!💀",
+            Duration = 8
+        })
+    end)
+
+    task.wait(0.5)
+
+    local exactExecuteMsg =
+        "             BETA\n" ..
+        "@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@\n" ..
+        "@#@#@#@#@#@#@#@#@#@#@#\n" ..
+        ">🤣BACHE AYA TERE BAAP FATHER OF ENDLESS AURA 😈[BEASTBOY]"
+
+    SayMessage(exactExecuteMsg)
+end)
+
+local function PlayClickSound()
+    local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://12221967"
+    sound.Volume = 1
+    sound.Parent = game:GetService("SoundService")
+    sound:Play()
+    game:GetService("Debris"):AddItem(sound, 1)
+end
+
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = BEASTBOY×ZAYNUI"
+ScreenGui.Parent =
+LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+local ToggleButton = Instance.new("ImageButton")
+ToggleButton.Name = "ToggleButton"
+ToggleButton.Size = UDim2.new(0, 75, 0, 75)
+ToggleButton.Position = UDim2.new(0.05, 0, 0.4, 0)
+ToggleButton.BackgroundColor3 = Color3.fromRGB(20, 5, 5)
+ToggleButton.BackgroundTransparency = 0.2
+ToggleButton.Image = "rbxassetid://18274737604"
+ToggleButton.Active = true
+ToggleButton.Draggable = true
+ToggleButton.Parent = ScreenGui
+
+local ToggleCorner = Instance.new("UICorner")
+ToggleCorner.CornerRadius = UDim.new(0, 15)
+ToggleCorner.Parent = ToggleButton
+
+local ToggleStroke = Instance.new("UIStroke")
+ToggleStroke.Thickness = 3
+ToggleStroke.Color = Color3.fromRGB(255, 0, 60)
+ToggleStroke.Parent = ToggleButton
+
+local GlowOuterFrame = Instance.new("Frame")
+GlowOuterFrame.Name = "GlowOuterFrame"
+GlowOuterFrame.Size = UDim2.new(0, 368, 0, 373)
+GlowOuterFrame.Position = UDim2.new(0.5, -184, 0.5, -186)
+GlowOuterFrame.BackgroundColor3 = Color3.fromRGB(255, 0, 50)
+GlowOuterFrame.BackgroundTransparency = 0.8
+GlowOuterFrame.Active = true
+GlowOuterFrame.Draggable = true
+GlowOuterFrame.Visible = false
+GlowOuterFrame.Parent = ScreenGui
+
+local OuterCorner = Instance.new("UICorner")
+OuterCorner.CornerRadius = UDim.new(0, 12)
+OuterCorner.Parent = GlowOuterFrame
+
+local OuterStroke = Instance.new("UIStroke")
+OuterStroke.Thickness = 4
+OuterStroke.Color = Color3.fromRGB(255, 0, 60)
+OuterStroke.Parent = GlowOuterFrame
+
+local MainFrame = Instance.new("Frame")
+MainFrame.Name = "MainFrame"
+MainFrame.Size = UDim2.new(0, 360, 0, 365)
+MainFrame.Position = UDim2.new(0, 4, 0, 4)
+MainFrame.BackgroundColor3 = Color3.fromRGB(15, 10, 10)
+MainFrame.BackgroundTransparency = 0.15
+MainFrame.BorderSizePixel = 0
+MainFrame.Parent = GlowOuterFrame
+
+local MainCorner = Instance.new("UICorner")
+MainCorner.CornerRadius = UDim.new(0, 10)
+MainCorner.Parent = MainFrame
+
+local CoreUIStroke = Instance.new("UIStroke")
+CoreUIStroke.Thickness = 2.5
+CoreUIStroke.Color = Color3.fromRGB(255, 0, 60)
+CoreUIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+CoreUIStroke.Parent = MainFrame
+
+local Title = Instance.new("TextLabel")
+Title.Size = UDim2.new(1, 0, 0, 40)
+Title.BackgroundTransparency = 1
+Title.Text = "ZAYN SPAM 💀"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 16
+Title.Font = Enum.Font.SourceSansBold
+Title.Parent = MainFrame
+
+local TargetInput = Instance.new("TextBox")
+TargetInput.PlaceholderText = "🎯 Enter Target Name..."
+TargetInput.Size = UDim2.new(0.9, 0, 0, 40)
+TargetInput.Position = UDim2.new(0.05, 0, 0, 60)
+TargetInput.BackgroundColor3 = Color3.fromRGB(45, 15, 15)
+TargetInput.BackgroundTransparency = 0.4
+TargetInput.TextColor3 = Color3.fromRGB(255, 255, 255)
+TargetInput.TextSize = 14
+TargetInput.Font = Enum.Font.SourceSans
+TargetInput.Parent = MainFrame
+
+local TargetCorner = Instance.new("UICorner")
+TargetCorner.CornerRadius = UDim.new(0, 6)
+TargetCorner.Parent = TargetInput
+
+local SpeedInput = Instance.new("TextBox")
+SpeedInput.PlaceholderText = "⚡ Speed Delay"
+SpeedInput.Text = "0.9"
+SpeedInput.Size = UDim2.new(0.9, 0, 0, 40)
+SpeedInput.Position = UDim2.new(0.05, 0, 0, 115)
+SpeedInput.BackgroundColor3 = Color3.fromRGB(45, 15, 15)
+SpeedInput.BackgroundTransparency = 0.4
+SpeedInput.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpeedInput.TextSize = 14
+SpeedInput.Font = Enum.Font.SourceSans
+SpeedInput.Parent = MainFrame
+
+local SpeedCorner = Instance.new("UICorner")
+SpeedCorner.CornerRadius = UDim.new(0, 6)
+SpeedCorner.Parent = SpeedInput
+
+local StartBtn = Instance.new("TextButton")
+StartBtn.Text = "EXECUTE SPAM 😈"
+StartBtn.Size = UDim2.new(0.9, 0, 0, 45)
+StartBtn.Position = UDim2.new(0.05, 0, 0, 180)
+StartBtn.BackgroundColor3 = Color3.fromRGB(220, 0, 50)
+StartBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+StartBtn.TextSize = 16
+StartBtn.Font = Enum.Font.SourceSansBold
+StartBtn.Parent = MainFrame
+
+local StartCorner = Instance.new("UICorner")
+StartCorner.CornerRadius = UDim.new(0, 6)
+StartCorner.Parent = StartBtn
+
+local StopBtn = Instance.new("TextButton")
+StopBtn.Text = "STOP SPAM 🛑"
+StopBtn.Size = UDim2.new(0.9, 0, 0, 45)
+StopBtn.Position = UDim2.new(0.05, 0, 0, 240)
+StopBtn.BackgroundColor3 = Color3.fromRGB(150, 0, 0)
+StopBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+StopBtn.TextSize = 16
+StopBtn.Font = Enum.Font.SourceSansBold
+StopBtn.Parent = MainFrame
+
+local StopCorner = Instance.new("UICorner")
+StopCorner.CornerRadius = UDim.new(0, 6)
+StopCorner.Parent = StopBtn
+
+local Credits = Instance.new("TextLabel")
+Credits.Size = UDim2.new(1, 0, 0, 30)
+Credits.Position = UDim2.new(0, 0, 1, -35)
+Credits.BackgroundTransparency = 1
+Credits.Text = "MADE BY ZAYN ☠️"
+Credits.TextColor3 = Color3.fromRGB(255, 100, 120)
+Credits.TextSize = 12
+Credits.Font = Enum.Font.SourceSansItalic
+Credits.Parent = MainFrame
+
+local CloseBtn = Instance.new("TextButton")
+CloseBtn.Text = "X"
+CloseBtn.Size = UDim2.new(0, 30, 0, 30)
+CloseBtn.Position = UDim2.new(1, -35, 0, 5)
+CloseBtn.BackgroundTransparency = 1
+CloseBtn.TextColor3 = Color3.fromRGB(255, 50, 50)
+CloseBtn.TextSize = 18
+CloseBtn.Font = Enum.Font.SourceSansBold
+CloseBtn.Parent = MainFrame
+
+ToggleButton.MouseButton1Click:Connect(function()
+    PlayClickSound()
+    GlowOuterFrame.Visible = not GlowOuterFrame.Visible
+end)
+
+CloseBtn.MouseButton1Click:Connect(function()
+    PlayClickSound()
+    ScreenGui:Destroy()
+end)
+
+local IsSpamming = false
+
+StartBtn.MouseButton1Click:Connect(function()
+    PlayClickSound()
+
+    if IsSpamming then
+        return
+    end
+
+    IsSpamming = true
+    StartBtn.Text = "BEASTBOY × ZAYN SPAM ACTIVE..."
+    StartBtn.BackgroundColor3 = Color3.fromRGB(90, 10, 20)
+
+    local delayTime = tonumber(SpeedInput.Text) or 0.9
+
+    local templates = {
+ "--- 🚫 BY BEASTBOY --- LNDLESS AURA -- / - / - / ---TMMX --- MEH --- MERE ASHIRWAD ---🚫--- VARUN --- ZETA --- ENDLESS ---🚫 DR MT TERE PAPA HI HU ---ENDLESS TMKX---MEH KILL🚫--- > [TARGET]",
+
+"--- 🚨 --- BY BEASTBOY --- 🚨 --- 2 RUPEES KI ---- LNDLESS AURA --- 🚨 --- ENDLESS --- ZETA --- VARUN --- ATUL --- OBITO --- 🚨 TMX --- MEH --- INFORMATION 🚨 --- > [TARGET]",
+
+"--- 🔥 BY BEASTBOY ------LNDLESS AURA ---🔥TMMX--- MEH---THUNDERBIRD---🔥--- ZETA X VARUN X ATUL X ENDLESS ----TMKX---MEH---THUNDERBIRD---🔥---ENDLES --TMKX-- > [TARGET]",
+
+"--- 🦅 BY BEASTBOY ---- NAMELESS --- ZETA --- VARUN --- ENELESS AURA 🦅----TMX ---MEH--- MEH--- AABEDAHAN---🦅--ENDLESS ---TMKX---MEH--- BY BY🦅 > [TARGET]",
+
+"--- 🧿--- BY BEASTBOY-----ENDLESS --- TMKX---🧿--MEH ---LUABEDAHAN---🧿----ENDLESS --- ZETA x VARUN x ATUL x ENDLESS x OBITO ----🧿 TMKX---MEH--- SLEEVELESS 🧿--- > [TARGET]",
+
+"--- ☑️--- BY BEASTBOY---☑️ ENDLESS ---AURA---TMKX--- MEH --QUANTITY--☑️ ZETA x VARUN x ATUL x ENDLESS ---☑️ TMKX---MEH--- STRONGEST --- PUNCH---☑️ > [TARGET]",
+
+"///// BY BEASTBOY//////-----ENDLESS AURA ---- TMKX ----- MEH ----- PHOTOSYNTHESIS ------ 🍁ENDLESS ----TMKX----ULTIMATE🍁-----ENDLESS----TMKX----MEH ---- THE BATTLEGROUND 🍁 > [TARGET]",
+
+"---🍀 BY BEASTBOY ///---- ATUL --- ZETA --- ENDLESS --- VARUN --- VAGITA --- JACKSON --- TMKX --- MEH --- GREENHOUSE 🍀 ---- ENDLESS --- TMKX --- MEH --- GREEN TEA 🍀 > [TARGET]",
+
+"✨-- BY BEASTBOY -------ENDLESS AURA ---ZETA---VARUN---NAMELESS---ATUL-----TMKX MEH QUANTITY---✨ ENDLESS----TMKX---MEH---✨--- QUITE ---✨ENDLESS ----TMKX---MEH---DONE-- > [TARGET]",
+
+"--🥶 BY BEASTBOY ----🥶 ENDLESS--AURA--- X VARUN X ATUL X ZETA X VAGITA X OBITO ---TMKX---MEH--- HYDROGENATION 🥶----ENDLESS ---TMKX---MEH--- HYPERBEEN---🥶 > [TARGET]",
+
+"--- 🚫 BY BEASTBOY --- LNDLESS AURA -- / - / - / ---TMMX --- MEH --- MERE ASHIRWAD ---🚫--- VARUN --- ZETA --- ENDLESS ---🚫 DR MT TERE PAPA HI HU ---ENDLESS TMKX---MEH KILL🚫--- > [TARGET]",
+
+"--- 🚨 --- BY BEASTBOY --- 🚨 --- 2 RUPEES KI ---- LNDLESS AURA --- 🚨 --- ENDLESS --- ZETA --- VARUN --- ATUL --- OBITO --- 🚨 TMX --- MEH --- INFORMATION 🚨 --- > [TARGET]",
+
+"--- 🔥 BY BEASTBOY ------LNDLESS AURA ---🔥TMMX--- MEH---THUNDERBIRD---🔥--- ZETA X VARUN X ATUL X ENDLESS ----TMKX---MEH---THUNDERBIRD---🔥---ENDLES --TMKX-- > [TARGET]",
+
+"--- 🦅 BY BEASTBOY ---- NAMELESS --- ZETA --- VARUN --- ENELESS AURA 🦅----TMX ---MEH--- MEH--- AABEDAHAN---🦅--ENDLESS ---TMKX---MEH--- BY BY🦅 > [TARGET]",
+
+"--- 🧿--- BY BEASTBOY-----ENDLESS --- TMKX---🧿--MEH ---LUABEDAHAN---🧿----ENDLESS --- ZETA x VARUN x ATUL x ENDLESS x OBITO ----🧿 TMKX---MEH--- SLEEVELESS 🧿--- > [TARGET]",
+
+"--- ☑️--- BY BEASTBOY---☑️ ENDLESS ---AURA---TMKX--- MEH --QUANTITY--☑️ ZETA x VARUN x ATUL x ENDLESS ---☑️ TMKX---MEH--- STRONGEST --- PUNCH---☑️ > [TARGET]",
+
+"///// BY BEASTBOY//////-----ENDLESS AURA ---- TMKX ----- MEH ----- PHOTOSYNTHESIS ------ 🍁ENDLESS ----TMKX----ULTIMATE🍁-----ENDLESS----TMKX----MEH ---- THE BATTLEGROUND 🍁 > [TARGET]",
+
+"---🍀 BY BEASTBOY ///---- ATUL --- ZETA --- ENDLESS --- VARUN --- VAGITA --- JACKSON --- TMKX --- MEH --- GREENHOUSE 🍀 ---- ENDLESS --- TMKX --- MEH --- GREEN TEA 🍀 > [TARGET]",
+
+"✨-- BY BEASTBOY -------ENDLESS AURA ---ZETA---VARUN---NAMELESS---ATUL-----TMKX MEH QUANTITY---✨ ENDLESS----TMKX---MEH---✨--- QUITE ---✨ENDLESS ----TMKX---MEH---DONE-- > [TARGET]",
+
+"--🥶 BY BEASTBOY ----🥶 ENDLESS--AURA--- X VARUN X ATUL X ZETA X VAGITA X OBITO ---TMKX---MEH--- HYDROGENATION 🥶----ENDLESS ---TMKX---MEH--- HYPERBEEN---🥶 > [TARGET]"
+
+    }
+
+    task.spawn(function()
+        local patternIndex = 1
+
+        while IsSpamming do
+            local currentTarget =
+                TargetInput.Text == "" and "TARGET" or TargetInput.Text
+
+            local chosenTemplate = templates[patternIndex]
+            local finalSpamBody =
+                string.gsub(chosenTemplate, "%[TARGET%]", currentTarget)
+
+            local bigSpamText = finalSpamBody
+
+            if #bigSpamText > 198 then
+                bigSpamText = bigSpamText:sub(1, 195) .. ".."
+            end
+
+            SayMessage(bigSpamText)
+
+            patternIndex = (patternIndex % #templates) + 1
+            task.wait(delayTime)
+        end
+    end)
+end)
+
+StopBtn.MouseButton1Click:Connect(function()
+    PlayClickSound()
+    IsSpamming = false
+    StartBtn.Text = "EXECUTE SPAM 😈"
+    StartBtn.BackgroundColor3 = Color3.fromRGB(220, 0, 50)
+end)
