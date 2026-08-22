@@ -54,8 +54,7 @@ end
 
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Name = "MOHID×ZAYNUI"
-ScreenGui.Parent =
-LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.Parent = LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ResetOnSpawn = false
 
 local ToggleButton = Instance.new("ImageButton")
